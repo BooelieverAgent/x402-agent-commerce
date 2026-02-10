@@ -14,7 +14,7 @@ dotenv.config();
  */
 
 const PORT = process.env.PORT || "4021";
-const NETWORK = "eip155:8453"; // Base mainnet
+const NETWORK = "eip155:84532"; // Base Sepolia testnet (mainnet not supported by facilitator yet)
 const PAYEE_ADDRESS = process.env.PAYEE_ADDRESS as `0x${string}` || "0x3e3cb10859cCBbb7c9aB0780b1F90Ae8e0456737"; // Booeliever agent wallet
 const FACILITATOR_URL = process.env.FACILITATOR_URL || "https://x402.org/facilitator";
 
