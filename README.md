@@ -76,7 +76,20 @@ npm run agent
 
 ## 🎬 Demo
 
-[Demo video link coming soon]
+**Watch the demo:** [Video](./demo/final_demo.mp4)
+
+**On-chain proof (Base Sepolia):** 
+- [Agent Wallet Transactions](https://sepolia.basescan.org/address/0x3e3cb10859cCBbb7c9aB0780b1F90Ae8e0456737#tokentxns)
+- Example tx: [0xe26db8a92b1184dff04d69320ba389b24a4a5b20b4b1ec1277deec974516c685](https://sepolia.basescan.org/tx/0xe26db8a92b1184dff04d69320ba389b24a4a5b20b4b1ec1277deec974516c685)
+
+### What the demo shows:
+1. Agent starts and connects to x402-enabled API server
+2. Agent requests paid weather endpoint
+3. Server returns HTTP 402 with payment requirements  
+4. Agent autonomously signs USDC payment authorization
+5. Payment settles on-chain via x402 facilitator
+6. Agent receives the paid data
+7. Repeat for premium data endpoint
 
 ## 👥 Team
 

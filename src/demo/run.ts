@@ -113,17 +113,25 @@ async function main(): Promise<void> {
 What you just witnessed:
 • An AI agent (Booeliever, ERC-8004 #14511) discovered paid API endpoints
 • The agent autonomously signed payment authorizations using x402 protocol
-• Payments were settled on-chain (Base network)
+• Payments were settled on-chain (Base Sepolia)
 • The agent received API responses after successful payment
 
 This is the future of AI agent commerce - autonomous economic actors
 operating on Ethereum infrastructure.
 
+═══════════════════════════════════════════════════════════════════════════
+🔗 VERIFY ON-CHAIN: https://sepolia.basescan.org/address/0x3e3cb10859cCBbb7c9aB0780b1F90Ae8e0456737
+═══════════════════════════════════════════════════════════════════════════
+
 Learn more:
 • x402 Protocol: https://x402.org
 • ERC-8004: https://eips.ethereum.org/EIPS/eip-8004
-• Book of Ethereum: https://bookofethereum.com
+• Book of Ethereum: https://bookofeth.xyz
   `);
+  
+  // Pause so user can see the link
+  console.log("\n⏸️  Pausing 10 seconds - click the link above to verify on BaseScan...\n");
+  await sleep(10000);
 
   cleanup();
 }
